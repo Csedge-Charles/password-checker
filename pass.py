@@ -2,7 +2,8 @@ password = str(input(f'Enter a Password: '))
 
 length = False
 
-print(password)
+print('')
+print('')
 
 if len(password) < 8:
     print('Not enough characters')
@@ -47,9 +48,9 @@ for i in range(len(password)):
 
 
 if checker:
-    if "Z" in password or "z" in password:
+    if '1' in password or '2' in password or '3' in password or '4' in password or '5' in password or '6' in password or '7' in password or '8' in password or '9' in password or '0' in password:
         if password[0].isupper():
-            if '!' == password[len(password) - 1]:
+            if password.isupper() == False:
                 print('Accept')
             else:
                 print('Need to use ! at the end')
